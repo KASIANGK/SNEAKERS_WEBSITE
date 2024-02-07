@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAKERS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Figtree:wght@400;500;600&family=Lato&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,600&family=Figtree:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@1,600&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@1,800&family=Figtree:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/460a426de8.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body id="bodyID">
+    <div class="boutonsNav">
+        <li><button id="boutonModal" type="submit">Connexion</button></li>
+        <li><button id="darkBouton" type="submit"><i class="fa-solid fa-circle-half-stroke" style="color: #606060;"></i></button></li>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fermerModal()">&times;</span>
+            <h2>WELCOME</h2>
+            <h3>baaaaack</h3>
+            <form>
+            <label for="nom">Name :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="telephone">Password :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <button type="submit">Log in</button>
+            <p>No account yet?</p>
+            <a href="" id="registerLink">Register</a>
+
+            </form>
+        </div>
+    </div>
+    <div id="secondModal" class="modal2">
+        <div class="modal-content">
+            <span class="close" onclick="fermerSecondModal()">&times;</span>
+            <h2>Registration</h2>
+            <form>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+    
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+    
+                <label for="email">Adresse mail :</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="submit">Création de compte</button>
+                <a href="" id="2LOGIN">Log in</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="titrePrincipal">
+        <img src="./public/modules/sneakersBlack.png">
+
+    </div>
+
+
+    <div class="intro">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a class="liensNav" href="#">Produits</a></li>
+                <li><a class="liensNav3" href="#">Blog</a></li>
+                <li><a class="liensNav4" href="#">About</a></li>
+                <li><a class="liensNav5" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="intro2">
+        <div class="BG"
+        style="background-image: url('./public/modules/SKY_LIGHT.jpg');
+        height: 530px;
+        width: 100%;
+        background-size: cover;
+        color: white;
+        background-position: 47% 9%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;">
+            <div class="intro3">
+                <div id="intro3P">
+                    <p id="pTitre">WALK WITH STYLE</p>
+                    <p id="intro3P2eP">ENJOY WITH</p>
+                    <img src="./public/modules/passion.png">
+                    
+                </div>
+                <button id="boutonIntro" type="text">LEZGOOO</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="troisDivEnsemble">
+        <div class="troisDiv">
+            <div>
+                <p>News</p>
+                <p class="barre">_______</p>
+                <img src="./public/modules/ba1a.jpg">
+            </div>
+            <div>
+                <p>Archives</p>
+                <p class="barre">_____________</p>
+                <img src="./public/modules/ba2.jpg">
+            </div>
+            <div>
+                <p>Projets</p>
+                <p class="barre">_________</p>
+                <img src="./public/modules/ba3a.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="piecesUniques video-bg">
+        <video id="video-pieces-uniques" autoplay loop muted>
+            <source src="./public/modules/walk.mp4" type="video/mp4">
+        </video>
+        <!-- <img id="imgChemin" src="/public/modules/route.png"> -->
+        <div class="contentPU">
+            <h2>PIECES UNIQUES</h2>
+            <div class="divPiecesUniques">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- <div class="discover">DISCOVER THE OTHER DIMENSION</div> -->
+    </div>
+    <div class="videoBG">
+        <!-- <video controls autoplay muted loop>
+            <source src="./public/modules/Automatic 5.mp4" type="video/mp4">
+        </video> -->
+        <img src="./public/modules/imgBG.JPG">
+        <button class="boutonVideo">Discover</button>
+    </div>
+
+    <div class="carousel-container">
+        <h2>PETIT TITRE OKLM</h2>
+        <div class="carousel_container"></div>
+    </div>
+
+
+
+    <div class="troisDivBis">
+        <div class="annecodtes">
+            <h3>💰</h3>
+            <h1>SNEAKY MARKET</h1>
+            <p>Les sneakers représentent 47 % du marché de la chaussure en France en 2020, soit 9 milliards d'euros</p>
+            <button type="submit">LIRE PLUS</button>
+        </div>
+        <div class="annecodtes">
+            <h3>💬</h3>
+            <h1>GOOD 2 KNOW</h1>
+            <p>Le terme "Sneaker" vient du verbe anglais to sneak, signifiant “se déplacer silencieusement”. Cette prouesse est rendue possible grâce aux semelles en caoutchouc ! </p>
+            <button type="submit">LIRE PLUS</button>
+        </div>
+        <div class="annecodtes">
+            <h3>🧇</h3>
+            <h1>Le point commun entre les baskets Nike et les gaufres</h1>
+            <p>La légende veut que ce bon vieux Bill Bowerman, fondateur de Nike, se serait inspiré d'un objet de son quotidien... son gaufrier!</p>
+            <p id="secondPannecdotes">D'où le semelle gauffrée de certaines baskets.</p>
+            <button type="submit">LIRE PLUS</button>
+        </div>
+    </div>
+    <div class="footerOG">
+        <div class="about">
+            <h2>ABOUT US</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In reiciendis magni est eum dignissimos totam officia hic voluptatum, veritatis ad facere necessitatibus distinctio quasi ab, nam nisi repellat nulla vel.</p>
+        </div>
+        <div class="recent">
+            <h2>RECENT POST</h2>
+            <a href =""> >Adidas </a>
+            <a href =""> > Nike </a>
+            <a href =""> > Vans </a>
+        </div>
+        <div class="tag">
+            <h2>TAG CLOUD</h2>
+            <button type="submit">passion</button>
+            <button type="submit">sport</button>
+            <button type="submit">joy</button>
+            <button type="submit">projects</button>
+        </div>
+    </div>
+        
+    <div class="copyright">
+        <p>Brussels 2024, and if u don't know, now, u know OKUUUUUR</p>
+    </div> 
+
+
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+
+
