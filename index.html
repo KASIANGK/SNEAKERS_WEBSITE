@@ -10,7 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Figtree:wght@400;500;600&family=Lato&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="./public/css/style.css" rel="stylesheet">
+    <link href="./public/css/media1024.css" rel="stylesheet">
+    <link href="./public/css/media768.css" rel="stylesheet">
+    <link href="./public/css/media1440.css" rel="stylesheet">
+    <link href="./public/css/media2200.css" rel="stylesheet">
+    <link href="./public/css/media2560.css" rel="stylesheet">
+    <link href="./public/css/media375.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +95,7 @@
     <div class="intro2">
         <div class="BG"
         style="background-image: url('./public/modules/SKY_LIGHT.jpg');
-        height: 530px;
+        
         width: 100%;
         background-size: cover;
         color: white;
@@ -126,35 +132,44 @@
                 <img src="./public/modules/ba3a.jpg">
             </div>
         </div>
-    </div>
+        <h2 id="titrePU">PIECES UNIQUES</h2>
 
-    <div class="piecesUniques video-bg">
-        <video id="video-pieces-uniques" autoplay loop muted>
-            <source src="./public/modules/walk.mp4" type="video/mp4">
-        </video>
-        <!-- <img id="imgChemin" src="/public/modules/route.png"> -->
-        <div class="contentPU">
-            <h2>PIECES UNIQUES</h2>
-            <div class="divPiecesUniques">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <!-- <div class="discover">DISCOVER THE OTHER DIMENSION</div> -->
     </div>
-    <div class="videoBG">
-        <!-- <video controls autoplay muted loop>
-            <source src="./public/modules/Automatic 5.mp4" type="video/mp4">
-        </video> -->
-        <img src="./public/modules/imgBG.JPG">
-        <button class="boutonVideo">Discover</button>
+    <div class="uniqueALL">
+        <div class="piecesUniques video-bg">
+            <video id="video-pieces-uniques" autoplay loop muted>
+                <source src="./public/modules/walk.mp4" type="video/mp4">
+            </video>
+            <!-- <img id="imgChemin" src="/public/modules/route.png"> -->
+            <div class="contentPU">
+                <!-- <h2 id="titrePU">PIECES UNIQUES</h2> -->
+                <div class="divPiecesUniques">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- <div class="discover">DISCOVER THE OTHER DIMENSION</div> -->
+        </div>
+        
+    </div>
+    <div class="dimension">
+        <div>
+            <h2>DISCOVER</h2>
+        </div>
+        <div class="videoBG">
+            <!-- <video controls autoplay muted loop>
+                <source src="./public/modules/Automatic 5.mp4" type="video/mp4">
+            </video> -->
+            <img src="./public/modules/imgBG.JPG">
+            <button class="boutonVideo">Discover</button>
+        </div>
     </div>
 
     <div class="carousel-container">
@@ -211,7 +226,7 @@
 
 
 
-  <script type="module" src="main.js"></script>
+  <script type="module" src="./public/js/main.js"></script>
 </body>
 </html>
 
