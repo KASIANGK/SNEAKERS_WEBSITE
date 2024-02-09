@@ -13,7 +13,7 @@
         margin-bottom: 2%;
         color: rgb(57, 50, 50);
         font-family: 'Bebas Neue', sans-serif;
-        font-size: 1.4em;
+        font-size: 2.3em;
         /* position: absolute; */
     }
     .titrePrincipal {
@@ -24,7 +24,7 @@
     }
     
     .titrePrincipal img {
-        width: 70%;
+        width: 80%;
     }
 
     /* _______ NAVBAR ________ */
@@ -44,13 +44,13 @@
         padding-bottom: 1%;
         color: rgb(57, 50, 50);
         font-family: 'Bebas Neue', sans-serif;
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
   
     .nav-list {
         list-style: none;
         display: flex;
-        gap: 20%;
+        gap: 30%;
         display: flex;
         width: 90%;
         justify-content: center;
@@ -88,13 +88,56 @@
         /* justify-content: center; */
         /* position: absolute; */
         /* bottom: 40%; */
-        padding-top: 16.5%;
+        padding-top: 14.5%;
         left: 2.5%;
     }
-
-    .intro3 img {
-        width: 65%;
+    
+    #pTitre {
+        margin-top: -10%;
     }
+    
+    #intro3P {
+        font-size: 2.8em;
+        z-index: 1;
+        width: 60%;
+        color: white;
+        /* position: absolute; */
+        font-family: 'Archivo Black', sans-serif;
+        /* line-height: 0.8em; */
+        line-height: 48px;
+        padding-left: 5%;
+    }
+    #intro3P2eP {
+        font-size: 3.1em;
+        margin-top: 1.8%;
+        width: 101%;
+        margin-bottom: 2.5%;
+    }
+    #intro3SecondP {
+        font-size: 4.5em;
+        z-index: 1;
+        width: 100%;
+        color: white;
+        /* position: absolute; */
+    }
+    #boutonIntro {
+        padding: 0.5%;
+        background-color: rgb(182, 92,111);
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 3em;
+        z-index: 1;
+        margin-top: 2%;
+        width: 220px;
+        /* position: absolute; */
+        margin-left: 6%;
+        font-family: 'Bebas Neue', sans-serif;
+        
+    }
+    #intro3PTitre {
+        font-size: 3em;
+    } 
 
 
 
@@ -131,7 +174,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1000px;
+        width: 800px;
         margin-top: -1%;
         
     }
@@ -195,8 +238,8 @@
 
 
     .uniqueALL {
-        margin-top: -6%;
-        height: 1200px;
+        margin-top: 1%;
+        height: 1700px;
     }
 
     .piecesUniques {
@@ -216,9 +259,9 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin-bottom: 15%;
-        margin-left: 24%;
-        gap: 10%;
+        margin-bottom: 29%;
+        margin-left: 18%;
+        gap: 23%;
     
     }
     .divPiecesUniques div {
@@ -228,9 +271,10 @@
         align-items: center;
         flex-direction: column;
         font-size: 1.1em;
-        margin-bottom: 5%; 
+        margin-bottom: 15%; 
         flex-wrap: wrap;
         margin-top: 2%;
+        transform: scale(1.5);
     }
     /* .divPiecesUniques div {
         width: 210px;
@@ -257,12 +301,12 @@
     
     #video-pieces-uniques {
         position: relative;
-        top: -26%;
+        top: -2%;
         left: -2.3%;
         /* width: 100%;
         height: 65%; */
         object-fit: cover;
-        transform: scale(0.75)
+        transform: scale(1.2)
     }
     
     .contentPU {
