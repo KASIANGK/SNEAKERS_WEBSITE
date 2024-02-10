@@ -405,7 +405,7 @@ body.dark-mode {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 15%;
-    margin-left: 20%;
+    /* margin-left: 20%; */
     gap: 10%;
 
 }
@@ -456,18 +456,19 @@ body.dark-mode {
   } */
   
   .contentPU {
-    position: absolute;
+    /* position: absolute; */
     top: 20%; /* pour monter ou descendre les div avec images  */
     /* left: 23%; */
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     color: #000000;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     flex-wrap: wrap;
+    z-index: 3000;
     
   }
 

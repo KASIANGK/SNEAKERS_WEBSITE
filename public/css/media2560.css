@@ -310,8 +310,14 @@
         transform: scale(1.2)
     }
     
+    .PU {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
     .contentPU {
-        position: absolute;
+        /* position: absolute; */
          /* pour monter ou descendre les div avec images  */
         /* left: 23%; */
         transform: translate(-50%, -50%);
@@ -323,6 +329,7 @@
         flex-direction: column;
         width: 90%;
         flex-wrap: wrap;
+        z-index: 3000;
         /* overflow: hidden; */
         
     }
