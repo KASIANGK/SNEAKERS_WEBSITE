@@ -236,6 +236,12 @@ for (let i = 0; i < divPieces.length; i++) {
     let pieceDiv = document.createElement("div")
     pieceDiv.classList.add('PU')
 
+
+    pieceDiv.style.display = "flex";
+    pieceDiv.style.justifyContent = 'center';
+    pieceDiv.style.alignItems = 'center'
+
+
     let img = document.createElement("img")
     img.src = imagesPieces[i]
     // img.style.width = "420px"

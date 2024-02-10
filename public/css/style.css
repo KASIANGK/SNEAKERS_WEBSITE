@@ -372,6 +372,12 @@ body.dark-mode {
 
 
 
+.PU {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 
 .uniqueALL {
     width: 100%;
@@ -483,7 +489,16 @@ body.dark-mode {
     
 } */
 
-
+.dimension h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.3em;
+    color: #484545;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
 
 .videoBG {
     width: 100%;

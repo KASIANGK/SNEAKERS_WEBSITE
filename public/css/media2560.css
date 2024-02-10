@@ -261,7 +261,7 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 29%;
-        margin-left: 20%;
+        /* margin-left: 20%; */
         gap: 23%;
     
     }
