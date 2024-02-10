@@ -1,4 +1,4 @@
-@media screen and (min-width: 2560px) {
+@media only screen and (min-width: 2560px) {
 
     .boutonsNav {
         display: flex;
@@ -75,6 +75,7 @@
         background-position: 47% 160%;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        height: 900px;
     }
 
 
@@ -260,7 +261,7 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 29%;
-        margin-left: 18%;
+        margin-left: 20%;
         gap: 23%;
     
     }
