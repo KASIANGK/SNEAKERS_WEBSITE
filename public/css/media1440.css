@@ -196,8 +196,10 @@
 
 
 
+    
     .uniqueALL {
-        margin-top: -6%;
+        margin-top: 6%;
+        width: 100%;
     }
 
     .piecesUniques {
@@ -211,28 +213,31 @@
     }
     .divPiecesUniques {
         display: flex;
-        width: 100%;
-        margin-top: 45%;
-        /* height: 3000px; */
-        justify-content: center;
-        align-items: center;
+        justify-content: center; /* Centrer horizontalement */
+        align-items: center; /* Centrer verticalement */
         flex-wrap: wrap;
-        margin-bottom: 15%;
-        margin-left: 18%;
-        gap: 12%;
-    
+        gap: 8%;
+        width: 100%;
     }
-    .divPiecesUniques div {
-        width: 280px;
+    
+    .grandesDivUniques {
+        position: absolute;
+        display: flex;
+        width: 100%;
+    }
+    .cardPU {
+        width: 235px;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        font-size: 1.2em;
-        margin-bottom: 5%; 
+        /* flex-direction: column; */
+        font-size: 1.1em;
+        margin-bottom: 1%; 
         flex-wrap: wrap;
         margin-top: 2%;
     }
+    
+
     
    
     
@@ -241,9 +246,6 @@
         width: 100%;
         height: 2100px;
         overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         
     }
     
@@ -251,11 +253,10 @@
         position: relative;
         top: -30%;
         left: -12.3%;
+        /* width: 100%;
+        height: 65%; */
         object-fit: cover;
-        transform: scale(0.75);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        transform: scale(0.75)
     }
     
     .contentPU {
@@ -283,9 +284,9 @@
         padding-left: 20%;
     }
     .prixTexte2 {
-        margin-left: 20%;
+        margin-left: 10%;
         line-height: 90%;
-        margin-top: -50%;
+        margin-top: -120%;
     }
     
     /* .piecesUniques img {

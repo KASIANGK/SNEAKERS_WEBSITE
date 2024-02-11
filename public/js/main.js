@@ -231,67 +231,51 @@ piecesTableau.sort(ordreAleatoire)
 
 
 let divPieces = document.querySelectorAll(".divPiecesUniques div")
+// divPieces.classList.add('classeAll')
 
 for (let i = 0; i < divPieces.length; i++) {
-    let pieceDiv = document.createElement("div")
-    pieceDiv.classList.add('PU')
+  let cardPU = divPieces[i]; // Récupérer la div cardPU actuelle
+
+  let img = document.createElement("img");
+  img.src = imagesPieces[i];
+  img.style.width = '100%';
+  img.style.margin = "-10%";
+  img.style.zIndex = "2";
+  cardPU.appendChild(img); // Ajouter l'image à la div cardPU
+
+  let txt = document.createElement("p");
+  txt.classList.add('prixTexte');
+  txt.textContent = "Modèle : " + piecesTableau[i].nom;
+  txt.style.fontFamily = "'Bebas Neue'";
+  txt.style.fontWeight = "italic";
+  txt.style.color = "white";
+  txt.style.fontSize = "1.3em";
+  txt.style.backgroundImage = "url('./public/modules/box15.png')";
+  txt.style.backgroundSize = "100%";
+  txt.style.backgroundRepeat = "no-repeat";
+  txt.style.backgroundPosition = "52% 0%";
+  txt.style.width = "400%";
+  txt.style.height = "227px";
+  txt.style.paddingTop = "21.5%";
+  cardPU.appendChild(txt); // Ajouter le texte à la div cardPU
+  
+  let price = document.createElement("p");
+  price.classList.add('prixTexte2');
+
+  if (piecesTableau[i].solde !== undefined) {
+      let prixSolde = piecesTableau[i].prix * (1 - piecesTableau[i].solde);
+      price.innerHTML = "<del>Price : " + piecesTableau[i].prix + " </del><span style='color: red;'> " + prixSolde.toFixed(2) + "</span>";
+  } else {
+      price.textContent = "\nPrice : " + piecesTableau[i].prix;
+  }
+  price.style.fontFamily = 'Archivo';
+  price.style.fontSize = "1em";
+  price.style.color = "white";
+  cardPU.appendChild(price); // Ajouter le prix à la div cardPU
 
 
-    pieceDiv.style.display = "flex";
-    pieceDiv.style.justifyContent = 'center';
-    pieceDiv.style.alignItems = 'center'
-
-
-    let img = document.createElement("img")
-    img.src = imagesPieces[i]
-    // img.style.width = "420px"
-    // img.style.width = "320px"
-    img.style.width = '110%'
-    img.style.margin = "-10%"
-    img.style.zIndex = "2"
-    pieceDiv.appendChild(img)
-
-    let txt = document.createElement("p")
-    txt.classList.add('prixTexte')
-    txt.textContent = "Modèle : " + piecesTableau[i].nom 
-    txt.style.fontFamily = "'Bebas Neue'"
-    txt.style.fontWeight = "italic"
-    txt.style.color = "white"
-    txt.style.fontSize = "1.3em"
-    txt.style.backgroundImage = "url('./public/modules/box15.png')"
-    txt.style.backgroundSize = "31%"
-    txt.style.backgroundRepeat = "no-repeat"
-    txt.style.backgroundPosition = "52% 0%"
-    txt.style.width = "400%"
-    txt.style.height = "227px"
-    txt.style.paddingTop = "21.5%"
-    // txt.style.paddingLeft = "9%"
-
-
-    pieceDiv.appendChild(txt)
-    
-    let price = document.createElement("p")
-    price.classList.add('prixTexte2')
-
-    if (piecesTableau[i].solde !== undefined) {
-        let prixSolde = piecesTableau[i].prix * (1 - piecesTableau[i].solde);
-        price.innerHTML = "<del>Price : " + piecesTableau[i].prix + " </del><span style='color: red;'> " +prixSolde.toFixed(2) + "</span>";
-    } else {
-        price.textContent = "\nPrice : " + piecesTableau[i].prix;
-    }
-
-    // price.textContent = "\nPrix : " + piecesTableau[i].prix
-    price.style.fontFamily = 'Archivo'
-    price.style.fontSize = "1em"
-    // price.style.marginTop = "-75%"
-    // price.style.marginLeft = "11%"
-    price.style.color = "white"
-
-
-    pieceDiv.appendChild(price)
-    
-    divPieces[i].appendChild(pieceDiv)
 }
+
 
 
 

@@ -239,8 +239,8 @@
 
 
     .uniqueALL {
-        margin-top: 1%;
-        height: 1700px;
+        margin-top: 6%;
+        width: 100%;
     }
 
     .piecesUniques {
@@ -254,40 +254,30 @@
     }
     .divPiecesUniques {
         display: flex;
+        justify-content: center; /* Centrer horizontalement */
+        align-items: center; /* Centrer verticalement */
+        flex-wrap: wrap;
+        gap: 8%;
         width: 100%;
-        margin-top: 30%;
-        /* height: 3000px; */
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 29%;
-        /* margin-left: 20%; */
-        gap: 23%;
+    }
     
+    .grandesDivUniques {
+        position: absolute;
+        display: flex;
+        width: 100%;
     }
-    .divPiecesUniques div {
-        width: 220px;
+    .cardPU {
+        width: 235px;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        /* flex-direction: column; */
         font-size: 1.1em;
-        margin-bottom: 15%; 
+        margin-bottom: 1%; 
         flex-wrap: wrap;
         margin-top: 2%;
-        transform: scale(1.5);
     }
-    /* .divPiecesUniques div {
-        width: 210px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 1.1em;
-        margin-bottom: 9%; 
-        flex-wrap: wrap;
-        margin-top: 2%;
-    } */
+    
 
     
    
@@ -302,22 +292,16 @@
     
     #video-pieces-uniques {
         position: relative;
-        top: -2%;
-        left: -2.3%;
+        top: -30%;
+        left: -12.3%;
         /* width: 100%;
         height: 65%; */
         object-fit: cover;
-        transform: scale(1.2)
+        transform: scale(0.75)
     }
     
-    .PU {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
     .contentPU {
-        /* position: absolute; */
+        position: absolute;
          /* pour monter ou descendre les div avec images  */
         /* left: 23%; */
         transform: translate(-50%, -50%);
@@ -329,7 +313,6 @@
         flex-direction: column;
         width: 90%;
         flex-wrap: wrap;
-        z-index: 3000;
         /* overflow: hidden; */
         
     }
@@ -344,7 +327,7 @@
     .prixTexte2 {
         margin-left: 10%;
         line-height: 90%;
-        margin-top: -70%;
+        margin-top: -120%;
     }
     
     /* .piecesUniques img {
@@ -352,6 +335,8 @@
         padding-left: 3%;
         
     } */
+
+    
 
 
 

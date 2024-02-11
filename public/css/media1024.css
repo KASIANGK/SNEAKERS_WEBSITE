@@ -175,7 +175,8 @@
 
 
     .uniqueALL {
-        margin-top: -6%;
+        margin-top: 6%;
+        width: 100%;
     }
 
     .piecesUniques {
@@ -189,39 +190,30 @@
     }
     .divPiecesUniques {
         display: flex;
+        justify-content: center; /* Centrer horizontalement */
+        align-items: center; /* Centrer verticalement */
+        flex-wrap: wrap;
+        gap: 8%;
         width: 100%;
-        margin-top: 40%;
-        /* height: 3000px; */
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 15%;
-        margin-left: 15%;
-        gap: 10%;
+    }
     
+    .grandesDivUniques {
+        position: absolute;
+        display: flex;
+        width: 100%;
     }
-    .divPiecesUniques div {
-        width: 220px;
+    .cardPU {
+        width: 235px;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        /* flex-direction: column; */
         font-size: 1.1em;
-        margin-bottom: 5%; 
+        margin-bottom: 1%; 
         flex-wrap: wrap;
         margin-top: 2%;
     }
-    /* .divPiecesUniques div {
-        width: 210px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 1.1em;
-        margin-bottom: 9%; 
-        flex-wrap: wrap;
-        margin-top: 2%;
-    } */
+    
 
     
    
@@ -271,7 +263,7 @@
     .prixTexte2 {
         margin-left: 10%;
         line-height: 90%;
-        margin-top: -70%;
+        margin-top: -120%;
     }
     
     /* .piecesUniques img {
