@@ -372,79 +372,104 @@ body.dark-mode {
 
 
 
-.PU {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-}
-
 .uniqueALL {
+    margin-top: 6%;
     width: 100%;
-    height: 1300px;
-    display: flex;
-    
     position: relative;
+
 }
 
 .piecesUniques {
-    /* width: 100%; */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    align-items: flex-start;
+    align-items: center;
     margin-top: 3%;
-    position: relative;
 }
 .divPiecesUniques {
     display: flex;
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+    justify-content: center; 
+    align-items: center; 
     flex-wrap: wrap;
-    gap: 10%;
+    gap: 8%;
     width: 100%;
 }
+
+.grandesDivUniques {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.cardPU {
+    width: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    margin-bottom: 1%; 
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
 
 
 
 
 .video-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  #video-pieces-uniques {
     position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 65%;
-    object-fit: cover;
-  }
+    height: 2100px;
+    overflow: hidden;
+    
+}
 
-  
-  .contentPU {
-    top: 20%; /* pour monter ou descendre les div avec images  */
+#video-pieces-uniques {
+    position: relative;
+    top: -30%;
+    left: -12.3%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.75)
+}
+
+.contentPU {
+    position: absolute;
+    transform: translate(-50%, -50%);
     color: #000000;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     flex-wrap: wrap;
-    z-index: 3000;
     
-  }
+}
 
 .piecesUniques p {
     transform: rotate(-6deg);
 }
+
+.prixTexte {
+    padding-left: 20%;
+}
+.prixTexte2 {
+    margin-left: 10%;
+    line-height: 90%;
+    margin-top: -120%;
+}
+
+/* .piecesUniques img {
+    width: 70%;
+    padding-left: 3%;
+    
+} */
+
+
 
 .discover {
     margin-top: 17%;
