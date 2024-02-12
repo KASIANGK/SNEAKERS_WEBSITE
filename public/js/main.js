@@ -234,14 +234,14 @@ let divPieces = document.querySelectorAll(".divPiecesUniques div")
 // divPieces.classList.add('classeAll')
 
 for (let i = 0; i < divPieces.length; i++) {
-  let cardPU = divPieces[i]; // Récupérer la div cardPU actuelle
+  let cardPU = divPieces[i]; 
 
   let img = document.createElement("img");
   img.src = imagesPieces[i];
   img.style.width = '100%';
   img.style.margin = "-10%";
   img.style.zIndex = "2";
-  cardPU.appendChild(img); // Ajouter l'image à la div cardPU
+  cardPU.appendChild(img); 
 
   let txt = document.createElement("p");
   txt.classList.add('prixTexte');
@@ -251,13 +251,21 @@ for (let i = 0; i < divPieces.length; i++) {
   txt.style.color = "white";
   txt.style.fontSize = "1.3em";
   txt.style.backgroundImage = "url('./public/modules/box15.png')";
-  txt.style.backgroundSize = "100%";
+  txt.style.backgroundSize = "260px";
   txt.style.backgroundRepeat = "no-repeat";
   txt.style.backgroundPosition = "52% 0%";
   txt.style.width = "400%";
-  txt.style.height = "227px";
-  txt.style.paddingTop = "21.5%";
-  cardPU.appendChild(txt); // Ajouter le texte à la div cardPU
+  txt.style.height = "197px";
+  txt.style.paddingTop = "16.5%";
+  txt.style.paddingLeft = '30%';
+
+  txt.style.transition = "transform 5s linear infinite"; 
+  txt.style.transform = "rotate(-6deg)";
+  
+  // txt.style.animation = "rotateBackground 5s linear infinite"; 
+
+
+  cardPU.appendChild(txt); 
   
   let price = document.createElement("p");
   price.classList.add('prixTexte2');
@@ -269,9 +277,13 @@ for (let i = 0; i < divPieces.length; i++) {
       price.textContent = "\nPrice : " + piecesTableau[i].prix;
   }
   price.style.fontFamily = 'Archivo';
-  price.style.fontSize = "1em";
+  price.style.fontSize = "0.9em";
   price.style.color = "white";
-  cardPU.appendChild(price); // Ajouter le prix à la div cardPU
+  price.style.paddingTop = '40%'
+  price.style.paddingLeft = '8%'
+  price.style.transition = "transform 5s linear infinite"; 
+  price.style.transform = "rotate(-6deg)";
+  cardPU.appendChild(price); 
 
 
 }
@@ -360,7 +372,7 @@ boutonDiv1.style.width = "40px"
 boutonDiv1.style.height = "40px"
 boutonDiv1.style.marginTop = '-15%'
 boutonDiv1.addEventListener('click', function() {
-    resetColors(); // reinitialise toutes les couleurs
+    resetColors(); 
     boutonDiv1.style.backgroundColor = "rgb(182, 92, 111)";
     mettreAJourCarousel(0, 3);
 });

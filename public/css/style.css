@@ -373,9 +373,10 @@ body.dark-mode {
 
 
 .uniqueALL {
-    margin-top: 6%;
+    margin-top: 2%;
     width: 100%;
     position: relative;
+    margin-bottom: 24%;
 
 }
 
@@ -386,33 +387,40 @@ body.dark-mode {
     justify-content: center;
     align-items: center;
     margin-top: 3%;
+    overflow-x: hidden;
 }
 .divPiecesUniques {
     display: flex;
     justify-content: center; 
     align-items: center; 
     flex-wrap: wrap;
-    gap: 8%;
+    gap: 4%;
     width: 100%;
+    padding: 1%;
+   
 }
 
 .grandesDivUniques {
     position: absolute;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 70%;
     top: 0;
     left: 0;
+    padding: 0.12%;
+
+    
 }
 .cardPU {
-    width: 235px;
+    width: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.1em;
-    margin-bottom: 1%; 
     flex-wrap: wrap;
-    margin-top: 2%;
+    /* margin-top: 2%; */
+    margin-bottom: -5%;
+    
 }
 
 
@@ -423,7 +431,7 @@ body.dark-mode {
     position: relative;
     width: 100%;
     height: 2100px;
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -433,11 +441,13 @@ body.dark-mode {
     left: -12.3%;
     width: 100%;
     object-fit: cover;
-    transform: scale(1.75)
+    transform: scale(0.75);
+    overflow-x: hidden;
+    
 }
 
 .contentPU {
-    position: absolute;
+    position: relative;
     transform: translate(-50%, -50%);
     color: #000000;
     text-align: center;
@@ -470,6 +480,7 @@ body.dark-mode {
 } */
 
 
+  
 
 .discover {
     margin-top: 17%;
