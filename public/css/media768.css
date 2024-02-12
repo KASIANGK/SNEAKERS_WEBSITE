@@ -104,14 +104,160 @@
 
 
     
-    .uniqueALL {
-        margin-top: 4%;
-        width: 100%;
-        height: 1200px;
-        position: relative;
-        margin-bottom: 54%;
+.uniqueALL {
+    margin-top: 4%;
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    margin-bottom: 55%;
+}
+.piecesUniques {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    overflow-x: hidden;
+}
+.divPiecesUniques {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1%;
+    gap: 7%;
+   
+}
+
+.grandesDivUniques {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    padding: 0.12%;
+
     
-    }
+}
+.cardPU {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    flex-wrap: wrap;
+    /* margin-top: 2%; */
+    /* margin-bottom: -1%; */ 
+}
+
+
+
+.videoBG {
+    width: 100vw;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 6%;
+
+}
+
+
+.video-bg {
+    position: relative;
+    width: 100%;
+    height: 2100px;
+    overflow-x: hidden;
+    
+}
+
+#video-pieces-uniques {
+    position: relative;
+    top: -30%;
+    left: -0.1%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    overflow-x: hidden;
+    
+}
+
+.contentPU {
+    position: relative;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    flex-wrap: wrap;
+    
+}
+
+.piecesUniques p {
+    transform: rotate(-6deg);
+}
+
+.prixTexte {
+    padding-left: 20%;
+}
+.prixTexte2 {
+    margin-left: 10%;
+    line-height: 90%;
+    margin-top: -120%;
+}
+
+
+
+.discover {
+    margin-top: 17%;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.3em;
+    color: #484545;
+}
+  
+   
+
+.dimension h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.3em;
+    color: #484545;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18%;
+    margin-bottom: 8%;
+}
+
+
+.troisDivBis {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    margin-bottom: 6%;
+    flex-wrap: wrap;
+    margin-top: -5%;
+}
+.troisDivBis div {
+    width: 700px;
+    height: 350px;
+    background-color: #daa368;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 3%;
+}
 
 
 

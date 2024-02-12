@@ -192,7 +192,24 @@
 
 
 
-
+    .video-bg {
+        position: relative;
+        width: 100%;
+        height: 2100px;
+        overflow-x: hidden;
+        
+    }
+    
+    #video-pieces-uniques {
+        position: relative;
+        top: -20%;
+        left: -0.1%;
+        width: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        overflow-x: hidden;
+        
+    }
 
 
 
@@ -241,7 +258,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 13%;
+    gap: 2%;
     flex-wrap: wrap;
 }
 
@@ -263,7 +280,7 @@
     margin-top: -5%;
 }
 .troisDivBis div {
-    width: 450px;
+    width: 400px;
     height: 400px;
     background-color: #daa368;
     display: flex;

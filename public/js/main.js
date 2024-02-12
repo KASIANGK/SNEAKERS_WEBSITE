@@ -238,7 +238,7 @@ for (let i = 0; i < divPieces.length; i++) {
 
   let img = document.createElement("img");
   img.src = imagesPieces[i];
-  img.style.width = '100%';
+  img.style.width = '90%';
   img.style.margin = "-10%";
   img.style.zIndex = "2";
   cardPU.appendChild(img); 
@@ -279,8 +279,8 @@ for (let i = 0; i < divPieces.length; i++) {
   price.style.fontFamily = 'Archivo';
   price.style.fontSize = "0.9em";
   price.style.color = "white";
-  price.style.paddingTop = '40%'
-  price.style.paddingLeft = '8%'
+  price.style.paddingTop = '40%';
+  price.style.paddingLeft = '8%';
   price.style.transition = "transform 5s linear infinite"; 
   price.style.transform = "rotate(-6deg)";
   cardPU.appendChild(price); 
@@ -368,9 +368,10 @@ let boutonDiv1 = document.createElement('button');
 boutonDiv1.style.border = "5px solid black"
 boutonDiv1.style.borderRadius = "50px"
 boutonDiv1.style.backgroundColor = "black"
-boutonDiv1.style.width = "40px"
-boutonDiv1.style.height = "40px"
+boutonDiv1.style.width = "35px"
+boutonDiv1.style.height = "35px"
 boutonDiv1.style.marginTop = '-15%'
+boutonDiv1.style.marginBottom = '17%'
 boutonDiv1.addEventListener('click', function() {
     resetColors(); 
     boutonDiv1.style.backgroundColor = "rgb(182, 92, 111)";
@@ -381,9 +382,10 @@ let boutonDiv2 = document.createElement('button');
 boutonDiv2.style.border = "5px solid black"
 boutonDiv2.style.borderRadius = "50px"
 boutonDiv2.style.backgroundColor = "black"
-boutonDiv2.style.width = "40px"
-boutonDiv2.style.height = "40px"
+boutonDiv2.style.width = "35px"
+boutonDiv2.style.height = "35px"
 boutonDiv2.style.marginTop = '-15%'
+boutonDiv2.style.marginBottom = '17%'
 boutonDiv2.addEventListener('click', function() {
     resetColors(); 
     boutonDiv2.style.backgroundColor = "rgb(182, 92, 111)";
@@ -394,9 +396,10 @@ let boutonDiv3 = document.createElement('button');
 boutonDiv3.style.border = "5px solid black"
 boutonDiv3.style.borderRadius = "50px"
 boutonDiv3.style.backgroundColor = "black"
-boutonDiv3.style.width = "40px"
-boutonDiv3.style.height = "40px"
+boutonDiv3.style.width = "35px"
+boutonDiv3.style.height = "35px"
 boutonDiv3.style.marginTop = '-15%'
+boutonDiv3.style.marginBottom = '17%'
 boutonDiv3.addEventListener('click', function() {
     resetColors(); 
     boutonDiv3.style.backgroundColor = "rgb(182, 92, 111)";
@@ -407,9 +410,10 @@ let boutonDiv4 = document.createElement('button');
 boutonDiv4.style.border = "5px solid black"
 boutonDiv4.style.borderRadius = "50px"
 boutonDiv4.style.backgroundColor = "black"
-boutonDiv4.style.width = "40px"
-boutonDiv4.style.height = "40px"
+boutonDiv4.style.width = "35px"
+boutonDiv4.style.height = "35px"
 boutonDiv4.style.marginTop = '-15%'
+boutonDiv4.style.marginBottom = '17%'
 boutonDiv4.addEventListener('click', function() {
     resetColors(); 
     boutonDiv4.style.backgroundColor = "rgb(182, 92, 111)";
