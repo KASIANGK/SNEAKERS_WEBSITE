@@ -326,13 +326,22 @@ function genererCarouselDiv(indexDebut, indexFin) {
         let img = document.createElement('img');
         img.src = imagesPieces[i];
         img.style.width = '300px';
+        img.style.marginTop = '40px'
         pieceDiv.appendChild(img);
 
         let txt = document.createElement('p');
         txt.textContent = "Modèle : " + piecesTableau[i].nom + "\nPrix : " + piecesTableau[i].prix;
+        txt.style.backgroundImage = 'url("./public/modules/ok.png")'
+        txt.style.backgroundRepeat = "no-repeat";
+        txt.style.backgroundPosition = "100% 70%";
+        txt.style.height = '100px'
+        txt.style.color = 'white'
+        txt.style.backgroundSize = '100%'
+        txt.style.paddingTop = '25px'
+        txt.style.paddingLeft = '35px'
         pieceDiv.appendChild(txt);
 
-        pieceDiv.style.marginBottom = '15%'
+        // pieceDiv.style.marginBottom = '5%'
         carouselDiv.appendChild(pieceDiv);
     }
 
@@ -356,7 +365,7 @@ function mettreAJourCarousel(indexDebut, indexFin) {
 let divTousLesBoutons = document.createElement('div');
 divTousLesBoutons.classList.add('touslesboutons');
 
-
+divTousLesBoutons.style.marginTop = '200px'
 function resetColors() {
     boutonDiv1.style.backgroundColor = "black";
     boutonDiv2.style.backgroundColor = "black";

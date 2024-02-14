@@ -366,6 +366,7 @@ body.dark-mode {
     color: #484545;
     width: 100%;
     display: flex;
+    /* align-items: center; */
     justify-content: center;
     margin-top: 4%;
 }
@@ -492,7 +493,7 @@ body.dark-mode {
     color: #484545;
 }
   
-   
+
 
 .dimension h2 {
     font-family: 'Archivo Black', sans-serif;
@@ -519,19 +520,22 @@ body.dark-mode {
     width: 100%;
     height: auto;
     margin-top: -10.5%;
+    filter: hue-rotate(120deg)
+    /* filter: hue-rotate(90deg) */
 }
 .boutonVideo {
     position: absolute;
-    top: 50%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(182, 92,111);
+    background-color: rgb(136, white, 13);
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    color: white;
+    font-weight: bolder;
+    color: rgb(101, 58, 43);
     border-radius: 5px;
-    border: none;
+    border: 7px solid rgb(110, 74, 39);
     font-size: 1.6em;
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -592,6 +596,22 @@ body.dark-mode {
 }
 
 
+.ifUdontKnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* .ifUdontKnow div {
+    width: calc(33.3% - 20px);
+} */
+
+
+/* .imageCachee img {
+    width: 230px;
+} */
 
 
 
@@ -676,19 +696,39 @@ body.dark-mode {
 
 .footerOG h2 {
     font-family: 'Bebas Neue';
+    
 }
 .footerOG div {
     width: 20%;
     display: flex;
     flex-direction: column;
 }
-
+.recent a {
+    text-decoration: none;
+    color: white;
+}
 .recent h2 {
     margin-top: -8%;
 }
-
+.tag {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.tag h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tag button {
+    background-color: transparent;
+    border: 2 px solid white;
+    border-radius: 15px;
+    color: white;
+}
 .copyright {
-    background-color: grey;
+    background-color: rgb(81, 81, 81);
     margin: 0;
     color: white;
     width: 100%;
@@ -696,6 +736,9 @@ body.dark-mode {
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+.copyright p {
+    margin: 0;
 }
 
 
