@@ -544,7 +544,6 @@ body.dark-mode {
 
 
 
-
 .carousel_container {
     display: flex;
     flex-direction: row;
@@ -627,7 +626,7 @@ body.dark-mode {
     margin-bottom: 6%;
     flex-wrap: wrap;
     margin-top: -5%;
-    padding: 3%;
+    padding: 0%;
 }
 .troisDivBis div {
     width: 400px;
@@ -638,11 +637,15 @@ body.dark-mode {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 15px;
-    margin-bottom: 3%;
+    padding: 0px;
+    margin-bottom: 0%;
 }
 .troisDivBis h2 {
     font-family: 'Bebas Neue';
+}
+.annecodtes {
+    box-shadow: -2px 0 8px 2px lightgrey, 2px 0 8px 2px lightgrey;
+    padding: 0%;
 }
 
 /* .annecodtes {
@@ -679,6 +682,7 @@ body.dark-mode {
     font-family: 'Bebas Neue';
     font-size: 1.4em;
 }
+
 
 
 .footerOG {
