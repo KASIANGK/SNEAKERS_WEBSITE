@@ -17,7 +17,7 @@ boutonMode.addEventListener("click", () => {
   let quatriemeA = document.querySelector('.liensNav4')
   let cinquiemeA = document.querySelector('.liensNav5')
   let boutonConnexion = document.querySelector("#boutonModal")
-  
+  let videoBGimg = document.querySelector('.videoBG img')
 
 
   if (body.classList.contains("dark-mode")) {
@@ -33,6 +33,13 @@ boutonMode.addEventListener("click", () => {
   }
 
 
+
+  let troisDivBisElements = document.querySelectorAll('.troisDivBis div');
+  troisDivBisElements.forEach(function(div) {
+      div.style.backgroundColor = 'lightblue'; 
+      div.style.color = 'black'; 
+  });
+
   let tousLesBoutons = document.querySelectorAll('.touslesboutons button');
 
   if (body.classList.contains("dark-mode")) {
@@ -40,8 +47,13 @@ boutonMode.addEventListener("click", () => {
       bouton.style.backgroundColor = "white";
     });
 
+    troisDivBisElements.forEach((div) => {
+      div.style.backgroundColor = 'rgb(72, 172, 198)'; 
+      div.style.color = 'white'; 
+    });
+
     titrePrincipal.src = './public/modules/sneakersBlanc.png';
-    background.style.backgroundImage = 'url("./public/modules/SKY_DARK.jpg")';
+    background.style.backgroundImage = 'url("./public/modules/SKY-DARK.jpg")';
     video.src = './public/modules/walkBlack.mp4';
     premierA.style.color = "rgb(154, 147, 147)";
     deuxiemeA.style.color = "rgb(154, 147, 147)";
@@ -50,13 +62,20 @@ boutonMode.addEventListener("click", () => {
     cinquiemeA.style.color = "rgb(154, 147, 147)";
     boutonMode.style.backgroundColor = "black";
     boutonConnexion.style.color = "#F3F0EC;";
+    videoBGimg.style.filter = 'invert(75%)'
+    
   } else {
     tousLesBoutons.forEach((bouton) => {
       bouton.style.backgroundColor = "black";
     });
 
+    troisDivBisElements.forEach((div) => {
+      div.style.backgroundColor = 'pink';
+      div.style.color = 'black';
+    });
+
     titrePrincipal.src = './public/modules/sneakersBlack.png';
-    background.style.backgroundImage = 'url("./public/modules/SKY_LIGHT.jpg")';
+    background.style.backgroundImage = 'url("./public/modules/SKY-LIGHT.jpg")';
     video.src = './public/modules/walk.mp4';
     premierA.style.color = "rgb(57, 50, 50)";
     deuxiemeA.style.color = "rgb(57, 50, 50)";
@@ -68,7 +87,20 @@ boutonMode.addEventListener("click", () => {
   }
 
 
-  
+  let divsPink = document.querySelectorAll('.pink11, .pink22, .pink33');
+  divsPink.forEach((div) => {
+    if (body.classList.contains("dark-mode")) {
+      // Changer la source de l'image en mode sombre
+      let darkImagePath = div.dataset.darkImage;
+      if (darkImagePath) {
+        div.querySelector('img').src = darkImagePath;
+      }
+    } else {
+      // Revenir à la source d'origine de l'image en mode clair
+      let originalImagePath = div.querySelector('img').className + '.jpg';
+      div.querySelector('img').src = './public/modules/' + originalImagePath;
+    }
+  });
 
 })
 
@@ -465,5 +497,24 @@ troisDivBisElements.forEach(function(div) {
       div.style.color = 'black';
     });
   });
+
+
+troisDivBisElements.forEach(function(div) {
+    div.addEventListener('mouseenter', function() {
+        if (body.classList.contains("dark-mode")) {
+            div.style.transition = 'background-color 0.5s ease';
+            div.style.backgroundColor = 'black'; // Changez la couleur de fond en bleu
+            div.style.color = 'white'; // Changez la couleur du texte en blanc
+        }
+    });
+  
+    div.addEventListener('mouseleave', function() {
+        if (body.classList.contains("dark-mode")) {
+            div.style.transition = 'background-color 0.5s ease';
+            div.style.backgroundColor = 'lightblue'; // Restaurez la couleur de fond en mode sombre
+            div.style.color = 'black'; // Restaurez la couleur du texte en mode sombre
+        }
+    });
+});
 
 

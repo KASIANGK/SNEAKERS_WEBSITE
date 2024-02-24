@@ -109,7 +109,7 @@
     width: 100%;
     height: 1200px;
     position: relative;
-    margin-bottom: 55%;
+    margin-bottom: 10%;
 }
 .piecesUniques {
     width: 100%;
@@ -249,7 +249,7 @@
 .troisDivBis div {
     width: 700px;
     height: 350px;
-    background-color: #daa368;
+    /* background-color: #daa368; */
     display: flex;
     justify-content: center;
     align-items: center;

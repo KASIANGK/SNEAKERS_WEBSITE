@@ -267,7 +267,7 @@
 .troisDivBis div {
     width: 700px;
     height: 400px;
-    background-color: #daa368;
+    /* background-color: #daa368; */
     display: flex;
     justify-content: center;
     align-items: center;

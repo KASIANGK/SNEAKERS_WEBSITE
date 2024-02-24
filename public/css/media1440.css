@@ -181,16 +181,43 @@
         width: 100%;
         /* margin-left: 25%; */
         /* position: relative; */
-        margin-top: 6%;
+        margin-top: 4%;
         display: flex;
         margin-right: 0;
         margin-left: 0;
+        margin-bottom: -1%;
         justify-content: center;
 
     }
 
 
-
+    .uniqueALL {
+        margin-top: 2%;
+        width: 100%;
+        position: relative;
+        margin-bottom: 2%;
+    
+    }
+    
+    .piecesUniques {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        overflow-x: hidden;
+    }
+    .divPiecesUniques {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: wrap;
+        gap: 4%;
+        width: 100%;
+        padding: 1%;
+        margin-top: 5%;
+    }
 
     .video-bg {
         position: relative;
@@ -213,8 +240,26 @@
 
 
 
+    .dimension h2 {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 2.3em;
+        color: #484545;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: -13%;
+        margin-bottom: 7%;
+    }
 
 
+    .videoBG {
+        width: 100vw;
+        height: 490px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 6%;
+    
+    }
 
 .carousel_container {
     display: flex;
@@ -282,7 +327,7 @@
 .troisDivBis div {
     width: 400px;
     height: 400px;
-    background-color: #daa368;
+    /* background-color: #daa368; */
     display: flex;
     justify-content: center;
     align-items: center;
