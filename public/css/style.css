@@ -62,7 +62,7 @@ body.dark-mode {
 } 
 #darkBouton {
     border: none;
-    background-color: #F3F0EC;;
+    background-color: rgb(244, 240, 237);
 }
 
 
@@ -262,6 +262,7 @@ body.dark-mode {
 #boutonIntro {
     padding: 0.5%;
     background-color: rgb(182, 92,111);
+    /* background-color: rgb(178, 66, 44); */
     color: white;
     border-radius: 5px;
     border: none;
@@ -272,6 +273,7 @@ body.dark-mode {
     /* position: absolute; */
     margin-left: 6%;
     font-family: 'Bebas Neue', sans-serif;
+    box-shadow: 0px 0px 8px 2px rgba(46, 45, 45, 0.366);
     
 }
 #intro3PTitre {
@@ -340,12 +342,6 @@ body.dark-mode {
    
 }
 
-.barre {
-    line-height: 0.1em;
-    display: flex;
-    justify-content: center;
-    /* background-color: rgba(255, 255, 255, 0.511); */
-}
 
 .troisDiv img {
     max-width: 95%;
@@ -510,12 +506,15 @@ body.dark-mode {
 
 .videoBG {
     width: 100vw;
-    height: 470px;
+    height: 500px;
     overflow: hidden;
     position: relative;
     margin-bottom: 6%;
+    background-image: url('../modules/bgLIGHT.jpg');
+    background-position: 0% 12%;
 
 }
+
 .videoBG img {
     width: 100%;
     height: auto;
@@ -523,25 +522,31 @@ body.dark-mode {
     /* filter: hue-rotate(120deg) */
     /* filter: hue-rotate(90deg) */
 }
-.boutonVideo {
+#boutonVideo {
     position: absolute;
-    top: 78%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(136, rgb(255, 255, 255), 13);
+    background-color: rgb(182, 92,111);
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     font-weight: bolder;
-    color: rgb(101, 58, 43);
+    color: rgb(255, 255, 255);
     border-radius: 5px;
-    border: 7px solid rgb(110, 74, 39);
+    border: 1px solid rgb(182, 92,111);
     font-size: 1.6em;
     font-family: 'Bebas Neue', sans-serif;
+    box-shadow: 0px 0px 8px 2px rgba(46, 45, 45, 0.568);
 }
 
 
-
+/* .pieceDiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+} */
 
 
 .carousel_container {
@@ -561,7 +566,7 @@ body.dark-mode {
     margin-bottom: -3%;
     padding-top: 2%;
     /* margin-bottom: 5%; */
-    flex-direction: column; /* Modifier la direction à "row" pour aligner horizontalement */
+    flex-direction: column; 
 }
 
 
@@ -573,7 +578,6 @@ body.dark-mode {
     text-align: center;
     
 }
-
 
 .touslesboutons {
     width: 100%;
@@ -673,7 +677,7 @@ body.dark-mode {
     width: 70%;
 }
 .annecodtes button {
-    background-color: rgb(206, 99, 169);
+    background-color: rgb(182, 92,111);
     color: white;
     border-radius: 15px;
     width: 150px;
@@ -682,9 +686,59 @@ body.dark-mode {
     margin-bottom: 5%;
     font-family: 'Bebas Neue';
     font-size: 1.4em;
+    box-shadow: 0px 0px 8px 2px rgba(46, 45, 45, 0.568);
 }
 
-
+.route {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.route-title {
+    margin-top: 5%;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.3em;
+    color: #484545;
+    padding-top: 75%;
+    text-align: center;
+    margin-bottom: 85%;
+}
+.container-route {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.container-route input {
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgb(96, 96, 96);
+    width: 300px;
+    border: 4px dashed rgb(255, 255, 255);
+    margin-bottom: 35%;
+}
+.container-route ::placeholder {
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+}
+.container-route button {
+    background-color: rgb(182, 92, 112);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(182, 92,111);
+    font-size: 1.6em;
+    font-family: 'Bebas Neue', sans-serif;
+    box-shadow: 0px 0px 8px 2px rgba(46, 45, 45, 0.568);
+}
 
 .footerOG {
     display: flex;

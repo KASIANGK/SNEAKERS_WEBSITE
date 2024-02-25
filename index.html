@@ -117,23 +117,17 @@
     
     <div class="troisDivEnsemble">
         <div class="troisDiv">
-            <div class="pink11" data-dark-image="./public/modules/bbyblue11.jpg">
-                <p>News</p>
-                <!-- <p class="barre">_______</p> -->
-                <!-- <img src="./public/modules/ba1a.jpg"> -->
-                <img class="pink1" src="./public/modules/pink11.jpg">
+            <div class="pink11" data-dark-image="./public/modules/pink1111.jpg">
+                <p class="troisDivP">News</p>
+                <img class="pink1" src="./public/modules/Illustration_sans_titre 4.jpg"  data-original-src="./public/modules/Illustration_sans_titre 4.jpg">
             </div>
-            <div class="pink22" data-dark-image="./public/modules/bbyblue2.jpg">
-                <p>Archives</p>
-                <!-- <p class="barre">_____________</p> -->
-                <!-- <img src="./public/modules/ba2.jpg"> -->
-                <img class="pink2" src="./public/modules/pink22.jpg">
+            <div class="pink22" data-dark-image="./public/modules/pink2222.jpg">
+                <p class="troisDivP">Archives</p>
+                <img class="pink2" src="./public/modules/pink22.jpg" data-original-src="./public/modules/pink22.jpg">
             </div>
-            <div class="pink33" data-dark-image="./public/modules/bbyblue3.jpg">
-                <p>Projets</p>
-                <!-- <p class="barre">_________</p> -->
-                <!-- <img src="./public/modules/ba3a.jpg"> -->
-                <img class="pink3" src="./public/modules/pink33.jpg">
+            <div class="pink33" data-dark-image="./public/modules/pink3333.jpg">
+                <p class="troisDivP">Projets</p>
+                <img class="pink3" src="./public/modules/pink33.jpg" data-original-src="./public/modules/pink33.jpg">
             </div>
         </div>
     </div>
@@ -168,11 +162,7 @@
             <h2>DISCOVER</h2>
         </div>
         <div class="videoBG">
-            <!-- <video controls autoplay muted loop>
-                <source src="./public/modules/Automatic 5.mp4" type="video/mp4">
-            </video> -->
-            <img src="./public/modules/back.jpeg">
-            <button class="boutonVideo">Discover</button>
+            <button id="boutonVideo">Discover</button>
         </div>
     </div>
 
@@ -206,17 +196,23 @@
     <div class="route">
         <div class="route-entete">
             <div class="route-title">
-                <h1>OUR EVENTS</h1>
+                <h2>JOIN US</h2>
             </div>
             <div class="route-img-hidden">
                 
             </div>
         </div>
-        <div class="route-row1">
-
+        <div class="container-route">
+            <form action="#" method="post">
+                <input type="text" name="username" placeholder="Enter your username" required>
+                <!-- <input type="text" name="phone" placeholder="Enter your phone number" required> -->
+                <input type="email" name="email" placeholder="Enter your mail adress" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
         </div>
-        <div class="route-row2">
-
+        <div class="newsletter-checkbox">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">accept to receive the newsletter</label>
         </div>
     </div>
 

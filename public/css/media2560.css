@@ -123,7 +123,7 @@
     }
     #boutonIntro {
         padding: 0.5%;
-        background-color: rgb(182, 92,111);
+        /* background-color: rgb(182, 92,111); */
         color: white;
         border-radius: 5px;
         border: none;
@@ -198,12 +198,6 @@
     }
     
     
-    .barre {
-        line-height: 0.1em;
-        display: flex;
-        justify-content: center;
-        /* background-color: rgba(255, 255, 255, 0.511); */
-    }
     
     .troisDiv img {
         max-width: 95%;

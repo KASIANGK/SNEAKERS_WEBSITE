@@ -155,12 +155,7 @@
        
     }
     
-    .barre {
-        line-height: 0.1em;
-        display: flex;
-        justify-content: center;
-        /* background-color: rgba(255, 255, 255, 0.511); */
-    }
+
     
     .troisDiv img {
         max-width: 95%;
@@ -247,7 +242,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: -13%;
+        margin-top: -12%;
         margin-bottom: 7%;
     }
 

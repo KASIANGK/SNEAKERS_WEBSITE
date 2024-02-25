@@ -17,7 +17,8 @@ boutonMode.addEventListener("click", () => {
   let quatriemeA = document.querySelector('.liensNav4')
   let cinquiemeA = document.querySelector('.liensNav5')
   let boutonConnexion = document.querySelector("#boutonModal")
-  let videoBGimg = document.querySelector('.videoBG img')
+  let videoBGimg = document.querySelector('.videoBG')
+
 
 
   if (body.classList.contains("dark-mode")) {
@@ -36,9 +37,10 @@ boutonMode.addEventListener("click", () => {
 
   let troisDivBisElements = document.querySelectorAll('.troisDivBis div');
   troisDivBisElements.forEach(function(div) {
-      div.style.backgroundColor = 'lightblue'; 
+      div.style.backgroundColor = 'rgb(160, 202, 254)'; 
       div.style.color = 'black'; 
   });
+
 
   let tousLesBoutons = document.querySelectorAll('.touslesboutons button');
 
@@ -47,13 +49,23 @@ boutonMode.addEventListener("click", () => {
       bouton.style.backgroundColor = "white";
     });
 
+    tousLesBoutons.forEach((bouton) => {
+      bouton.addEventListener("click", () => {
+          tousLesBoutons.forEach((bouton) => {
+              bouton.style.backgroundColor = "white";
+          });
+          bouton.style.backgroundColor = "rgb(182, 92, 112)";
+      });
+  });
+
+
     troisDivBisElements.forEach((div) => {
-      div.style.backgroundColor = 'rgb(72, 172, 198)'; 
+      div.style.backgroundColor = 'rgb(139, 140, 188)'; 
       div.style.color = 'white'; 
     });
 
     titrePrincipal.src = './public/modules/sneakersBlanc.png';
-    background.style.backgroundImage = 'url("./public/modules/SKY-DARK.jpg")';
+    background.style.backgroundImage = 'url("./public/modules/IMG_7032.JPG")';
     video.src = './public/modules/walkBlack.mp4';
     premierA.style.color = "rgb(154, 147, 147)";
     deuxiemeA.style.color = "rgb(154, 147, 147)";
@@ -62,7 +74,7 @@ boutonMode.addEventListener("click", () => {
     cinquiemeA.style.color = "rgb(154, 147, 147)";
     boutonMode.style.backgroundColor = "black";
     boutonConnexion.style.color = "#F3F0EC;";
-    videoBGimg.style.filter = 'invert(75%)'
+    videoBGimg.style.backgroundImage = 'url("./public//modules/bgDark.jpg")';
     
   } else {
     tousLesBoutons.forEach((bouton) => {
@@ -82,25 +94,74 @@ boutonMode.addEventListener("click", () => {
     troisiemeA.style.color = "rgb(57, 50, 50)";
     quatriemeA.style.color = "rgb(57, 50, 50)";
     cinquiemeA.style.color = "rgb(57, 50, 50)";
-    boutonMode.style.backgroundColor = "rgb(241, 231, 216)";
+    boutonMode.style.backgroundColor = "rgb(244, 240, 237)";
     boutonConnexion.style.color = "rgb(57, 50, 50)";
+    videoBGimg.style.backgroundImage = 'url("./public/modules/bgLIGHT.jpg")';
+
   }
 
 
+  // let divsPink = document.querySelectorAll('.pink11, .pink22, .pink33');
+  // divsPink.forEach((div) => {
+  //   if (body.classList.contains("dark-mode")) {
+
+  //     let darkImagePath = div.dataset.darkImage;
+  //     if (darkImagePath) {
+  //       div.querySelector('img').src = darkImagePath;
+  //     }
+  //   } else {
+  //     let originalImagePath = div.querySelector('img').className + '.jpg';
+  //     div.querySelector('img').src = './public/modules/' + originalImagePath;
+  //   }
+  // });
+
+
+
+
+
+
+
+
+if (body.classList.contains("dark-mode")) {
+  console.log("Mode sombre active");
   let divsPink = document.querySelectorAll('.pink11, .pink22, .pink33');
   divsPink.forEach((div) => {
-    if (body.classList.contains("dark-mode")) {
-      // Changer la source de l'image en mode sombre
-      let darkImagePath = div.dataset.darkImage;
+      let darkImagePath = div.getAttribute('data-dark-image');
+      console.log("Chemin d'image sombre:", darkImagePath);
       if (darkImagePath) {
-        div.querySelector('img').src = darkImagePath;
+          let img = div.querySelector('img');
+          if (img) {
+              img.src = darkImagePath;
+              console.log("Chemin d'image apres mise a jour:", img.src);
+          }
       }
-    } else {
-      // Revenir à la source d'origine de l'image en mode clair
-      let originalImagePath = div.querySelector('img').className + '.jpg';
-      div.querySelector('img').src = './public/modules/' + originalImagePath;
-    }
   });
+} else {
+  console.log("Mode clair active");
+  restoreOriginalImages('.pink1', '.pink2', '.pink3');
+}
+
+function restoreOriginalImages(...imageSelectors) {
+  imageSelectors.forEach(selector => {
+      let images = document.querySelectorAll(selector);
+      images.forEach(image => {
+          let originalSrc = image.dataset.originalSrc;
+          console.log("Chemin d'image d'origine:", originalSrc);
+          if (originalSrc) {
+              image.src = originalSrc;
+              console.log("Chemin d'image apres restauration:", image.src);
+          }
+      });
+  });
+}
+
+
+
+
+
+
+
+
 
 })
 
@@ -183,30 +244,18 @@ let troisDiv = document.querySelectorAll(".troisDiv div")
 
 troisDiv.forEach(div => {
     let image = div.querySelector("img")
-    let barre = div.querySelector(".barre")
     let p = div.querySelector("p")
 
     image.addEventListener("mouseenter", function () {
         image.style.filter = "brightness(0.8)";
-        barre.style.transform = "scaleX(2)";
-        barre.style.color = "white"
         p.style.color = "white"
     });
 
     image.addEventListener("mouseleave", function () {
         image.style.filter = "brightness(1)";
-        barre.style.transform = "scaleX(1)";
-        barre.style.color = "black"
         p.style.color = "black"
     });
 
-    div.addEventListener("mouseenter", function () {
-        barre.style.width = "70%";
-    });
-
-    div.addEventListener("mouseleave", function () {
-        barre.style.width = "20%";
-    });
 });
 
   
@@ -348,37 +397,46 @@ function retrecirImage(event) {
 // //CAROUSEL
 
 function genererCarouselDiv(indexDebut, indexFin) {
-    let carouselDiv = document.createElement('div');
-    carouselDiv.classList.add('tout')
+  let carouselDiv = document.createElement('div');
+  carouselDiv.classList.add('tout')
 
-    for (let i = indexDebut; i <= indexFin; i++) {
-        let pieceDiv = document.createElement('div');
-        pieceDiv.classList.add("carouselElement");
+  for (let i = indexDebut; i <= indexFin; i++) {
+      let pieceDiv = document.createElement('div');
+      pieceDiv.classList.add("carouselElement");
 
-        let img = document.createElement('img');
-        img.src = imagesPieces[i];
-        img.style.width = '300px';
-        img.style.marginTop = '40px'
-        pieceDiv.appendChild(img);
+      let img = document.createElement('img');
+      img.src = imagesPieces[i];
+      img.style.width = '300px';
+      img.style.marginTop = '40px';
+      
+      if (body.classList.contains("dark-mode")) {
+          pieceDiv.style.backgroundImage = 'url("./public/modules/gdark.png")';
+      } else {
+          pieceDiv.style.backgroundImage = 'url("./public/modules/gdark.png")';
+      }
+      
+      pieceDiv.style.backgroundPosition = '30% 130%';
+      pieceDiv.style.backgroundSize = '120%';
+      pieceDiv.style.backgroundRepeat = 'no-repeat';
+      pieceDiv.appendChild(img);
 
-        let txt = document.createElement('p');
-        txt.textContent = "Modèle : " + piecesTableau[i].nom + "\nPrix : " + piecesTableau[i].prix;
-        txt.style.backgroundImage = 'url("./public/modules/ok.png")'
-        txt.style.backgroundRepeat = "no-repeat";
-        txt.style.backgroundPosition = "100% 70%";
-        txt.style.height = '100px'
-        txt.style.color = 'white'
-        txt.style.backgroundSize = '100%'
-        txt.style.paddingTop = '25px'
-        txt.style.paddingLeft = '35px'
-        pieceDiv.appendChild(txt);
+      let txt = document.createElement('p');
+      txt.textContent = "Modèle : " + piecesTableau[i].nom + "\nPrix : " + piecesTableau[i].prix;
+      txt.style.backgroundRepeat = "no-repeat";
+      txt.style.backgroundPosition = "100% 70%";
+      txt.style.height = '100px';
+      txt.style.color = 'white';
+      txt.style.backgroundSize = '100%';
+      txt.style.paddingTop = '25px';
+      txt.style.paddingLeft = '35px';
+      pieceDiv.appendChild(txt);
 
-        // pieceDiv.style.marginBottom = '5%'
-        carouselDiv.appendChild(pieceDiv);
-    }
+      carouselDiv.appendChild(pieceDiv);
+  }
 
-    return carouselDiv;
+  return carouselDiv;
 }
+
 
 
 function mettreAJourCarousel(indexDebut, indexFin) {
@@ -493,7 +551,7 @@ troisDivBisElements.forEach(function(div) {
   
     div.addEventListener('mouseleave', function() {
       div.style.transition = 'background-color 0.5s ease';
-      div.style.backgroundColor = 'pink';
+      div.style.backgroundColor = 'rgb(247, 193, 230)';
       div.style.color = 'black';
     });
   });
@@ -503,16 +561,16 @@ troisDivBisElements.forEach(function(div) {
     div.addEventListener('mouseenter', function() {
         if (body.classList.contains("dark-mode")) {
             div.style.transition = 'background-color 0.5s ease';
-            div.style.backgroundColor = 'black'; // Changez la couleur de fond en bleu
-            div.style.color = 'white'; // Changez la couleur du texte en blanc
+            div.style.backgroundColor = 'black'; 
+            div.style.color = 'white'; 
         }
     });
   
     div.addEventListener('mouseleave', function() {
         if (body.classList.contains("dark-mode")) {
             div.style.transition = 'background-color 0.5s ease';
-            div.style.backgroundColor = 'lightblue'; // Restaurez la couleur de fond en mode sombre
-            div.style.color = 'black'; // Restaurez la couleur du texte en mode sombre
+            div.style.backgroundColor = 'lightblue'; 
+            div.style.color = 'black'; 
         }
     });
 });
