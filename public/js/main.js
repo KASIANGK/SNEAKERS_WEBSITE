@@ -292,8 +292,8 @@ console.log("nom: " + piece1.nom);
 
 let piecesTableau = [piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8, 
     piece9, piece10, piece11, piece12, piece13, piece14, piece15, piece16]
-let imagesPieces = ["./public/modules/Sujet3.png", 
-    "./public/modules/Sujet3.png", "./public/modules/Sujet4.png", "./public/modules/Sujet5.png",
+let imagesPieces = ["./public/modules/sh2.png", 
+    "./public/modules/sh1.png", "./public/modules/Sujet4.png", "./public/modules/Sujet5.png",
     "./public/modules/Sujet7.png", "./public/modules/Sujet21.png", "./public/modules/Sujet22.png", "./public/modules/Sujet9.png", "./public/modules/Sujet10.png", "./public/modules/Sujet11.png", "./public/modules/Sujet12.png", 
     "./public/modules/Sujet13.png", 
     "./public/modules/Sujet14.png", 
