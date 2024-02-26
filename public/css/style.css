@@ -635,7 +635,8 @@ body.dark-mode {
 .troisDivBis div {
     width: 400px;
     height: 400px;
-    background-color: #daa368;
+    /* background-color: #daa368; */
+    background-color: rgb(230, 158, 213);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -748,7 +749,7 @@ body.dark-mode {
     width: 100%;
     color: white;
     background-color: grey;
-    gap: 10%;
+    gap: 5%;
     padding: 20px;
     
 }

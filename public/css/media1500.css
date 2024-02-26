@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1500px) {
 
     .boutonsNav {
         display: flex;
@@ -242,7 +242,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: -16%;
+        margin-top: -23.5%;
         margin-bottom: 7%;
     }
 
@@ -320,7 +320,7 @@
     margin-top: -5%;
 }
 .troisDivBis div {
-    width: 400px;
+    width: 450px;
     height: 400px;
     /* background-color: #daa368; */
     display: flex;
@@ -333,7 +333,7 @@
 }
 
 .footerOG {
-    margin-top: -4.5%;
+    margin-top: -3.5%;
 }
 
 .route {
@@ -353,7 +353,7 @@
     color: #484545;
     padding-top: 75%;
     text-align: center;
-    margin-bottom: 70%;
+    margin-bottom: 105%;
 }
 .container-route {
     display: flex;
@@ -368,7 +368,7 @@
     background-color: rgb(96, 96, 96);
     width: 300px;
     border: 4px dashed rgb(255, 255, 255);
-    margin-bottom: 95%;
+    margin-bottom: 125%;
 }
 .container-route ::placeholder {
     color: white;
@@ -402,7 +402,7 @@
     color: white;
 }
 #phone {
-    margin-left: 720%;
+    margin-left: 840%;
     color: white;
     width: 120px;
 }
